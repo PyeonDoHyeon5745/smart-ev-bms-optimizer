@@ -1,0 +1,27 @@
+# 데이터 (15GB)
+data/
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*.pyo
+.eggs/
+
+# 가상환경
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PDF
+*.pdf
+
+# PINN ablation 반복 저장 폴더
+models/saved/pinn_lam_*/
