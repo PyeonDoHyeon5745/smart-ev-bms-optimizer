@@ -19,11 +19,11 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from src.ev_data_loader import load_ev_train_test
-from src.clustering import generate_synthetic_data, train_rf_classifier
-from src.soh_lstm import train_model, evaluate_model, PEUKERT_N
-from src.baselines import train_xgboost, evaluate_xgboost
-from src.soh_cde import train_cde, evaluate_cde
+from preprocessing.ev_data_loader import load_ev_train_test
+from clustering.clustering import generate_synthetic_data, train_rf_classifier
+from modeling.soh_lstm import train_model, evaluate_model, PEUKERT_N
+from modeling.baselines import train_xgboost, evaluate_xgboost
+from modeling.soh_cde import train_cde, evaluate_cde
 
 SAVE_DIR = "models/saved"
 

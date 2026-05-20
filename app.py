@@ -8,17 +8,17 @@ import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
 
-from src.clustering import (
+from clustering.clustering import (
     predict_driver_type,
     predict_driver_type_proba,
     FEATURES as CLUSTER_FEATURES,
 )
-from src.soh_lstm import (
+from modeling.soh_lstm import (
     predict_soh_curve,
     arrhenius_multiplier,
     PEUKERT_N,
 )
-from src.strategy import (
+from strategy.strategy import (
     get_strategy,
     find_eol_cycle,
     cycles_to_years,
@@ -33,7 +33,7 @@ from src.strategy import (
     personalized_recommendations,
     total_recommendation_effect,
 )
-from src.ev_database import get_brands, get_models, get_trims, get_spec
+from strategy.ev_database import get_brands, get_models, get_trims, get_spec
 
 _APP_DIR = Path(__file__).parent
 MODELS_DIR = str(_APP_DIR / "models" / "saved")
